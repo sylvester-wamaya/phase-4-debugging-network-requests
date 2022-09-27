@@ -1,4 +1,5 @@
 class MoviesController < ApplicationController
+  wrap_parameters formart: []
   
   def index
     movies = Movie.all
